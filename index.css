@@ -1,0 +1,124 @@
+/* reset style */
+*,*::after,*::before{
+    margin: 0;    ;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+html{
+    font-size: 62.5%;
+}
+/* root variable */
+:root{
+    --color--primary:#FF5722;
+    --color--secondary:#FFF6F2;
+    --color--secondary-dark:#FF7A50;
+    --color--navbar:#FFF8F8;
+    --color--font-primary:#878787;
+    --color--withe:#ffffff;
+    
+    }
+    .container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    
+
+
+    /* buttons */
+    .btn{
+        border: none;
+        outline: none;
+        padding: 2.5rem 3rem;
+        border-radius: 12px;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-align: center;
+        
+    }
+.btn--primary{
+    background-color:var(--color--primary);
+    color: var(--color--withe);
+
+}
+.btn--secondary{
+    background-color: var(--color--secondary-dark);
+    color: var(--color--withe);
+}
+.btn--block{
+    width: 100%;
+    
+}
+/* the list */
+.list {
+    padding: 2rem;
+display: flex;
+gap:2rem;
+font-size: 1.6rem;
+}
+.list--block{
+    flex-direction: column;
+}
+.badge{
+    border-radius: 15px;
+border: solid 2px var(--color--primary);
+    background-color: var(--color--primary);
+    color: var(--color--withe);
+    display: inline;
+    padding: 1rem 1.5rem;
+    text-transform:uppercase;
+    height: 5rem;
+    
+}
+.badge--secondary{
+    background-color: var(--color--secondary);
+    color: var(--color--primary);
+}
+
+    /* windos screen */
+@media screen and (min-width:1024px) {
+    .btn{
+            
+        font-size: 1.8rem;
+    }
+    .list{
+        font-size: 1.8rem;
+    }
+    
+}
+/* panel */
+.panel{
+    border-radius: 15px;
+    background-color: aliceblue;
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+.panel header{
+    background-color: var(--color--secondary-dark);
+    display: flex;
+    padding: 2rem;
+}
+.list li{
+    display: flex;
+    text-align: justify;
+    color: var(--color--withe);
+    margin: 2rem;
+}
+.body {
+    background-color: var(--color--secondary);
+    width: 100%;
+}
+.body .list {
+    display: flex;
+    flex-direction: column;
+   
+
+}
+.body .list li{
+    color: black;
+}

@@ -1,0 +1,21 @@
+/* Webfont: Yekan */
+
+@font-face {
+	font-family: 'IranYekan';
+
+	src: url('./assets/font/Yekan.woff');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'IranYekan';
+
+	src: url('./assets/font/Yekan.ttf'
+	);
+	font-weight: 700;
+	font-style: normal;
+}
+body, button{
+	font-family: IranYekan;
+	font-size: 1.4rem;
+}
