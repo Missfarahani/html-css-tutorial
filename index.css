@@ -10,9 +10,10 @@ html{
 }
 /* root variable */
 :root{
-    --color--primary:#FF5722;
+    --color--primary:#FF7A50;
+    --color--primary--dark:#FE4E00;
     --color--secondary:#FFF6F2;
-    --color--secondary-dark:#FF7A50;
+    --color--secondary-dark:#FFA589;
     --color--navbar:#FFF8F8;
     --color--font-primary:#878787;
     --color--withe:#ffffff;
@@ -58,18 +59,19 @@ font-size: 1.6rem;
 }
 .badge{
     border-radius: 15px;
-border: solid 2px var(--color--primary);
-    background-color: var(--color--primary);
+border: solid 5px var(--color--primary);
+    background-color: var(--color--primary--dark);
     color: var(--color--withe);
     display: inline;
     padding: 1rem 1.5rem;
     text-transform:uppercase;
     height: 5rem;
+    font-size: 2rem;
     
 }
 .badge--secondary{
-    background-color: var(--color--secondary);
-    color: var(--color--primary);
+    background-color: var(--color--withe);
+    color: var(--color--primary--dark);
 }
 
     /* windos screen */
@@ -87,15 +89,34 @@ border: solid 2px var(--color--primary);
 .block-plan{
     display: grid;
     gap: 2rem 3rem;
-}
+    background-color: #878787;
+justify-items: center;}
 .plan{
 max-width: 500px;
+font-size: 1.8rem;
 
+}
+
+.plan__introduction{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+.plan__price{
+    font-size: 3rem ;
+
+}
+.plan__billing-cycle{
+    font-size: 1.4rem;
+}
+.plan__discription{
+    margin-top: 1rem  ;
+    display: block;
 }
 .card{
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 0 20px 10px #997d7d;
+    box-shadow: 0 0 20px 10px #e0d0d0;
 
 
 }
@@ -104,8 +125,11 @@ max-width: 500px;
 
 }
 .card__header{
-    background-color: var(--color--secondary-dark);
+    background-color: var(--color--primary );
     color: var(--color--withe);
+}
+.card__secondary .card__header{
+    background-color: var(--color--secondary-dark);
 }
 @media screen and (min-width:1024px) {
     .block-plan{
